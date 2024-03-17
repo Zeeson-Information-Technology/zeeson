@@ -1,17 +1,39 @@
 import Link from "next/link"
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Image from "next/image"
 function Logo() {
+  const [width, setWidth] = useState(window.innerWidth)
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth)
+    }
+
+    window.addEventListener("resize", handleResize)
+
+    return () => {
+      window.removeEventListener("resize", handleResize)
+    }
+  }, [])
   return (
     <div className="text-2xl laptop:text-4xl font-[800]">
       <Link href={"/"}>
-        <Image
-          src="/img1.jpg"
-          alt="logo"
-          className="h-[25px] w-[25px] md:h-[40px] md:w-[40px]"
-          height={40}
-          width={40}
-        />
+        {width > 800 ? (
+          <Image
+            src="/img1.jpg"
+            alt="logo"
+            className="h-[25px] w-[25px] md:h-[40px] md:w-[40px]"
+            height={60}
+            width={60}
+          />
+        ) : (
+          <Image
+            src="/img1.jpg"
+            alt="logo"
+            className="h-[25px] w-[25px] md:h-[40px] md:w-[40px]"
+            height={40}
+            width={40}
+          />
+        )}
       </Link>
     </div>
   )
