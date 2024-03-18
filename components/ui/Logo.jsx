@@ -21,16 +21,16 @@ function Logo() {
             src="/img1.jpg"
             alt="logo"
             className="h-[25px] w-[25px] md:h-[40px] md:w-[40px] object-contain"
-            height={60}
-            width={60}
+            height={90}
+            width={90}
           />
         ) : (
           <Image
             src="/img1.jpg"
             alt="logo"
             className="h-[25px] w-[25px] md:h-[40px] md:w-[40px]"
-            height={40}
-            width={40}
+            height={60}
+            width={60}
           />
         )}
       </Link>
