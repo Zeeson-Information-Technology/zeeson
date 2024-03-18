@@ -1,8 +1,11 @@
 import Link from "next/link"
+import dynamic from "next/dynamic"
 import React from "react"
-import Logo from "./Logo"
-import { BsFacebook, BsTwitter, BsInstagram, BsLinkedin } from "react-icons/bs"
 
+import { BsFacebook, BsTwitter, BsInstagram, BsLinkedin } from "react-icons/bs"
+const Logo = dynamic(() => import("./Logo"), {
+  ssr: false,
+})
 function Footer() {
   return (
     <div>

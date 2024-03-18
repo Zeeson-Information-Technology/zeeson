@@ -1,9 +1,11 @@
 import React, { useState } from "react"
+import dynamic from "next/dynamic"
 import Link from "next/link"
 import { BiMenuAltRight } from "react-icons/bi"
-import Logo from "../Logo"
 import Mobile_Nav from "./mobile.nav"
-
+const Logo = dynamic(() => import("../Logo"), {
+  ssr: false,
+})
 function Nav() {
   const [togglemenu, setTogglemenu] = useState(false)
   return (
