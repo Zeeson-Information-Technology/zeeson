@@ -21,8 +21,8 @@ function Logo() {
             src="/img1.jpg"
             alt="logo"
             className="h-[25px] w-[25px] md:h-[40px] md:w-[40px] object-contain"
-            height={90}
-            width={90}
+            height={70}
+            width={80}
           />
         ) : (
           <Image
