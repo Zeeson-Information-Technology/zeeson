@@ -14,38 +14,38 @@ function Features() {
     {
       id: 1,
       icon: <HiUserGroup color="#5239FA" className="text-[2rem]" />,
-      title: "Uses Client First",
-      body: "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. ",
+      title: "Client-First Approach",
+      body: "At the heart of our operations is a commitment to understanding and prioritizing your business goals, ensuring every solution aligns with your vision.",
     },
     {
       id: 2,
       icon: <BsFillCheckCircleFill color="#5239FA" className="text-[2rem]" />,
-      title: "Two Free Revision Round",
-      body: "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. ",
+      title: "Unlimited Revisions Until Perfect",
+      body: "Our commitment is to perfection. Enjoy the freedom of unlimited revisions until your digital solution exactly matches your vision and standards",
     },
     {
       id: 3,
       icon: <RiPencilRuler2Line color="#5239FA" className="text-[2rem]" />,
       title: "Template Customization",
-      body: "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. ",
+      body: "Break free from the ordinary with fully customizable templates that stand out in the digital landscape.",
     },
     {
       id: 4,
       icon: <BsQuestionCircleFill color="#5239FA" className="text-[2rem]" />,
       title: "Customer Sastisfaction",
-      body: "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. ",
+      body: "Your satisfaction is our success. We strive to exceed expectations with every project we undertake",
     },
     {
       id: 5,
       icon: <BsStopwatchFill color="#5239FA" className="text-[2rem]" />,
       title: "Quick Delivery",
-      body: "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. ",
+      body: " Time is of the essence. Our efficient workflows ensure your projects are delivered promptly without compromising on quality.",
     },
     {
       id: 6,
       icon: <CgNotes color="#5239FA" className="text-[2rem]" />,
       title: "Hands-on approach",
-      body: "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. ",
+      body: "Our team is actively involved at every stage, ensuring a personalized and cohesive development process from start to finish.",
     },
   ]
   return (
@@ -54,7 +54,7 @@ function Features() {
         <div className="flex flex-col  items-center pt-10 max-w-md mx-auto">
           <h2 className="font-[600]">Features</h2>
           <h3 className="font-[600] text-2xl">
-            Design that solves problems, one product at a time
+           Empowering Your Digital Journey, One Solution at a Time
           </h3>
         </div>
         <div className="mt-[3rem]">

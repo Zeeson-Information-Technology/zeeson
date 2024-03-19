@@ -4,33 +4,33 @@ import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai"
 const accordionData = [
   {
     id: 1,
-    question: "How much time does it take ?",
+    question: "How much time does it take?",
     answer:
-      "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+      "Each project is unique. Timelines are tailored to match the scope and complexity of your project.",
   },
   {
     id: 2,
-    question: "What if my work is not submitted as proposed ?",
+    question: "What if my work is not submitted as proposed?",
     answer:
-      "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+      "We're committed to meeting our promises. Should there be any deviations, we'll work diligently to realign with the initial proposal.",
   },
   {
     id: 3,
-    question: "What is your class naming convention ?",
+    question: "What is your class naming convention?",
     answer:
-      "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+      "We adhere to industry best practices for coding standards, ensuring compatibility and ease of maintenance.",
   },
   {
     id: 4,
-    question: "How do we communicate ?",
+    question: "How do we communicate?",
     answer:
-      "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+      "Communication channels are tailored to your preference, from emails to video calls, ensuring constant updates and feedback.",
   },
   {
     id: 5,
-    question: "I have a bigger project. Can you handel it ?",
+    question: "I have a bigger project. Can you handel it?",
     answer:
-      "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+      "Absolutely. Our team is equipped to manage projects of any scale, delivering with the same level of excellence.",
   },
 ]
 function Accordion() {

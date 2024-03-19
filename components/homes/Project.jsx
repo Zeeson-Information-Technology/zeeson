@@ -7,10 +7,6 @@ import P3 from "../../assets/projects/project3.png"
 import Overlay from "../ui/overlay"
 
 
-
-
-
-
 function Project() {
   return (
     <div className="max-w-[80%] mx-auto my-[5rem]">
