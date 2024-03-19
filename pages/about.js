@@ -21,10 +21,8 @@ function About() {
                 Our designs solve problems
               </h3>
               <p>
-              At Zeeson, we believe that design is not just about aesthetics; it&#39;s 
-              about finding innovative solutions to complex problems. Our team is dedicated to creating digital experiences that are not only visually appealing but also functional and intuitive. 
-              Through a deep understanding of our clients&#39; needs and the latest technological advancements, 
-              we ensure every project we undertake is tailored to solve specific challenges and achieve measurable results.
+               Zeeson crafts designs that blend aesthetics with problem-solving, focusing on functional, intuitive digital experiences 
+              tailored to client needs and technology, ensuring each project addresses specific challenges and delivers results.
               </p>
             </div>
             <div>

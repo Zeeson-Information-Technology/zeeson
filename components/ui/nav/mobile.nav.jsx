@@ -10,11 +10,14 @@ function Mobile_Nav({ onClick }) {
         <Link href={"/"}>
           <li className={nav_class}>Home</li>
         </Link>
-        <Link href={"/features"}>
+        {/* <Link href={"/features"}>
           <li className={nav_class}>Features</li>
-        </Link>
-        <Link href={"/works"}>
+        </Link> */}
+        {/* <Link href={"/works"}>
           <li className={nav_class}>Works</li>
+        </Link> */}
+        <Link href={"/about"}>
+          <li className={nav_class}>About Us</li>
         </Link>
         {/* <Link href={"/blogs"}>
           <li className={nav_class}>Blogs</li>
@@ -25,9 +28,9 @@ function Mobile_Nav({ onClick }) {
         <Link href={"/contact"}>
           <li className={nav_class}>Contact Us</li>
         </Link>
-        <Link href={"/privacy"}>
+        {/* <Link href={"/privacy"}>
           <li className={nav_class}>Privacy</li>
-        </Link>
+        </Link> */}
         <IoClose
           className=" text-4xl absolute top-2 right-4 sm:right-6 text-white"
           onClick={() => onClick(false)}

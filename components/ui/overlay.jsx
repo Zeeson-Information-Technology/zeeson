@@ -12,7 +12,7 @@ function Overlay({ w, head, body, button }) {
     >
       <div className="z-60 text-white h-[400px] max-w-[80%] mx-auto flex flex-col justify-end xsm:max-h-full sm:max-h-[90%] md:gap-5 gap-3">
         {head && <h3>{head}</h3>}
-        {body && <p className="text-[10px] opacity-75">{body}</p>}
+        {/* {body && <p className="text-[10px] opacity-75 text-md">{body}</p>} */}
         {button && (
           <button className="flex items-center mb-[2rem] text-[#FCD980] gap-2">
             <span>{button}</span>{" "}

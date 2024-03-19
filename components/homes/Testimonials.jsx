@@ -12,7 +12,7 @@ function Testimonials() {
           Hear from Those Who&#39;ve Partnered with Us
           </h2>
           <p className="opacity-90">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
+            Discover the experiences and outcomes of those who&#39;ve collaborated with us, highlighting our commitment to excellence and partnership.
           </p>
         </div>
 

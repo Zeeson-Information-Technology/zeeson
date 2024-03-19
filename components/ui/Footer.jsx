@@ -18,17 +18,15 @@ function Footer() {
             <div className="md:max-w-[70%]  pl-4">
               <Logo />
               <p className="mt-4 opacity-90 text-sm md:text-base">
-                We are always open to discuss your project and improve your
-                online presence.
+                Ready to enhance your digital presence? Let&#39;s collaborate to create memorable online experiences.
               </p>
             </div>
             <div className=" md:max-w-[70%] pr-4 ">
               <h2 className="text-xl md:text-3xl font-[600] mb-4">
-                Let&#39;s Talk!
+                Connect With Us
               </h2>
               <p className="opacity-90 text-sm md:text-base">
-                We are always open to discuss your project, improve your online
-                presence and help with your UX/UI design challenges.
+                Discuss your project or explore more about how we can elevate your business online. We’re here to help.
               </p>
               <div className="md:text-xl flex items-center gap-4 mt-4 ">
                 <Link href={"/"}>
