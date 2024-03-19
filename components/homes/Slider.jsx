@@ -32,8 +32,8 @@ function Slider() {
       </div>
       <SwiperSlide>
         <p className="max-w-[75%] mx-auto text-center">
-        Our partnership with Zeeson IT has been transformative. 
-        Their keen understanding of our needs and ability to enhance our product has been unparalleled
+        Collaborating with Zeeson IT opened new avenues for our organization. Their unique approach and dedication to understanding 
+        our market needs led to innovative solutions that have significantly impacted our operations.
         </p>
         <div className=" laptop:max-w-[60%] mx-auto flex gap-6 justify-center mt-4">
           {/* <div className="rounded-full mb-3">
@@ -53,8 +53,8 @@ function Slider() {
       </SwiperSlide>
       <SwiperSlide>
         <p className="max-w-[75%] mx-auto text-center">
-          The best agency we&apos;ve worked with so far. They understand our
-          product and are able to add new features with a great focus.
+        The level of expertise and professionalism displayed by Zeeson IT has been exceptional. 
+        Their commitment to tailoring services to our specific needs has resulted in a highly efficient collaboration.
         </p>
         <div className=" laptop:max-w-[60%] mx-auto flex gap-6 justify-center mt-4">
           {/* <div className="rounded-full mb-3">
@@ -67,15 +67,14 @@ function Slider() {
             />
           </div> */}
           <div>
-            <p className="font-[500] text-lg">Jenny Wilson</p>
-            <p className="text-[14px]">Vice President</p>
+            <p className="font-[500] text-lg">Yusuf Ahmed</p>
+            <p className="text-[14px]">Director of Technology</p>
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <p className="max-w-[75%] mx-auto text-center">
-          The best agency we&apos;ve worked with so far. They understand our
-          product and are able to add new features with a great focus.
+        Zeeson IT&apos;s innovative approach and attention to detail have been crucial in the development and implementation of our digital strategy. Their guidance has been invaluable in navigating the complexities of modern tech solutions.
         </p>
         <div className=" laptop:max-w-[60%] mx-auto flex gap-6 justify-center mt-4">
           {/* <div className="rounded-full mb-3">
@@ -88,29 +87,8 @@ function Slider() {
             />
           </div> */}
           <div>
-            <p className="font-[500] text-lg">Jenny Wilson</p>
-            <p className="text-[14px]">Vice President</p>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <p className="max-w-[75%] mx-auto text-center">
-          The best agency we&apos;ve worked with so far. They understand our
-          product and are able to add new features with a great focus.
-        </p>
-        <div className=" laptop:max-w-[60%] mx-auto flex gap-6 justify-center mt-4">
-          {/* <div className="rounded-full mb-3">
-            <Image
-              src={about8}
-              className="rounded-full"
-              height={60}
-              width={60}
-              alt=""
-            />
-          </div> */}
-          <div>
-            <p className="font-[500] text-lg">Jenny Wilson</p>
-            <p className="text-[14px]">Vice President</p>
+            <p className="font-[500] text-lg">Fatima Al-Hassan</p>
+            <p className="text-[14px]">Innovation Manager</p>
           </div>
         </div>
       </SwiperSlide>

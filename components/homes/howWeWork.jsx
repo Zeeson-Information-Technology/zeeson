@@ -5,6 +5,8 @@ import P2 from "../../assets/pointer2.png"
 import P3 from "../../assets/pointer3.png"
 import P4 from "../../assets/pointer4.png"
 import { HiOutlineArrowNarrowRight } from "react-icons/hi"
+import Link from "next/link"
+
 function HowWeWork() {
   return (
     <div className="bg-[#F4F6FC]  ">
@@ -14,10 +16,13 @@ function HowWeWork() {
           <p className="opacity-75 laptop:mb-10">
             Our methodology is crafted to position your business at the forefront of innovation
           </p>
-          <button className="flex items-center gap-2 mt-4">
-            <span>Get in touch with us</span>{" "}
-            <HiOutlineArrowNarrowRight className="text-xl" />
-          </button>
+          <Link href={"/contact"}>
+            <button className="flex items-center gap-2 mt-4">
+              <span>Get in touch with us</span>{" "}
+              <HiOutlineArrowNarrowRight className="text-xl" />
+            </button>
+        </Link>
+          
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 laptop:gap-x-8 gap-y-10">
           <div className="laptop:w-[250px]">

@@ -11,14 +11,16 @@ function Nav() {
   return (
     <nav className=" bg-[#1C1E53] text-white relative">
       <div className=" flex justify-between items-center  mx-auto max-w-[80%]">
+      <div className="cursor-pointer">
         <Logo />
+      </div>
         {/* desktopMenu */}
         <div className=" hidden laptop:flex items-center gap-6 font-[500]">
           <Link href={"/"}>Home</Link>
           <Link href={"/about"}>About Us</Link>
-          <Link href={"/features"}>Features</Link>
+          {/* <Link href={"/features"}>Features</Link> */}
           {/* <Link href={"/pricing"}>Pricing</Link> */}
-          <Link href={"#faq"}>Faq</Link>
+          {/* <Link href={"#faq"}>Faq</Link> */}
           {/* <Link href={"/blogs"}>Blog</Link> */}
           <Link href={"/contact"}>
             <button className="border rounded-full px-4 py-2">

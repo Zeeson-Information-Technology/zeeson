@@ -15,16 +15,14 @@ function Hero() {
       </div>
       <Banner>
         <div className="max-w-[450px]">
-          <h2 className="text-2xl  laptop:text-4xl mb-6 font-[600]">
+          <h2 className="text-2xl  laptop:text-5xl mb-6 font-[600]">
            Connecting Business Dots for Digital Excellence
           </h2>
-          <p className="text-sm font-[500] opacity-70 mb-6 ">
-            Zeeson Information Technology: Your partner in connecting the 
-            dots for digital success. We create stellar websites and solutions tailored for startups, 
-            propelling your digital presence to new heights.
+          <p className="text-lg font-[500] opacity-70 mb-6 ">
+            We create stellar websites and solutions tailored for startups, propelling your digital presence to new heights.
           </p>
           <div className="flex items-center gap-8">
-            <a href={"/works"}>
+            <a href={"/contact"}>
               <Button text={"Get in Touch"} />
             </a>
             {/* <button className="flex items-center gap-4 text-[13px] md:text-base laptop:text-lg">
