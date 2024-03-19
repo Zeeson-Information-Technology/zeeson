@@ -24,7 +24,7 @@ function Footer() {
             </div>
             <div className=" md:max-w-[70%] pr-4 ">
               <h2 className="text-xl md:text-3xl font-[600] mb-4">
-                Let's Talk!
+                Let&#39;s Talk!
               </h2>
               <p className="opacity-90 text-sm md:text-base">
                 We are always open to discuss your project, improve your online

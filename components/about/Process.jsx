@@ -13,28 +13,28 @@ function Process() {
             <Image src={line} alt="" />
           </div>
           <h3 className="text-xl font-[500] my-3 ">Planning</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+          <p>Every successful project begins with a solid plan. We take the time to understand your vision, market, and users to lay down a strategic foundation.</p>
         </div>
         <div className="max-w-[90%] md:max-w-full">
           <div className="">
             <Image src={line} alt="" />
           </div>
           <h3 className="text-xl font-[500] my-3 ">Conception</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+          <p>With a plan in place, we begin to conceptualize the solution, transforming ideas into actionable strategies and designs.</p>
         </div>
         <div>
           <div>
             <Image src={line} alt="" />
           </div>
           <h3 className="text-xl font-[500] my-3 ">Design</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+          <p>Our design phase is where creativity meets strategy. We design with purpose, usability, and your brand identity at the forefront.</p>
         </div>
         <div>
           <div>
             <Image src={line} alt="" />
           </div>
           <h3 className="text-xl font-[500] my-3 ">Development</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+          <p>Our development process brings designs to life, using clean, efficient code to build robust, scalable, and secure digital products.</p>
         </div>
       </div>
     </div>

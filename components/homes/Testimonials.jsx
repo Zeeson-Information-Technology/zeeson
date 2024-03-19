@@ -9,7 +9,7 @@ function Testimonials() {
       <div className="max-w-[90%] md:max-w-[80%] mx-auto flex flex-col md:flex-row justify-center gap-6 py-[2rem] laptop:py-[4rem] ">
         <div className="max-w-[80%]  mx-auto mb-6">
           <h2 className="font-[600] text-xl mb-4">
-            What our clients say about us
+          Hear from Those Who&#39;ve Partnered with Us
           </h2>
           <p className="opacity-90">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.

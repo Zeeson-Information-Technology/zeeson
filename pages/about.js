@@ -21,9 +21,10 @@ function About() {
                 Our designs solve problems
               </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.
+              At Zeeson, we believe that design is not just about aesthetics; it&#39;s 
+              about finding innovative solutions to complex problems. Our team is dedicated to creating digital experiences that are not only visually appealing but also functional and intuitive. 
+              Through a deep understanding of our clients&#39; needs and the latest technological advancements, 
+              we ensure every project we undertake is tailored to solve specific challenges and achieve measurable results.
               </p>
             </div>
             <div>
@@ -39,10 +40,8 @@ function About() {
                   Goal focussed
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                Our approach is goal-oriented from the start. We dive deep into understanding your objectives 
+                to ensure every design and technological solution we provide moves you closer to achieving your business goals.
                 </p>
               </div>
 
@@ -51,10 +50,9 @@ function About() {
                   Continuous improvement
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                The digital landscape is ever-evolving, and so are we. 
+                Our commitment to continuous learning and improvement means we always bring the latest and best practices to your projects, ensuring your business stays ahead.
+
                 </p>
               </div>
             </div>
@@ -74,10 +72,8 @@ function About() {
                   Inspire, Innovate, Share
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                We aim to inspire with our designs, innovate with our solutions, and share our knowledge to empower our clients. Our mission is to 
+                create digital products that not only meet but exceed expectations, driving growth and success for businesses worldwide.
                 </p>
               </div>
               <div>
@@ -95,10 +91,8 @@ function About() {
                   Laser focus
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                Our vision is clear – to be the leading force in the digital transformation of businesses, with a laser focus on delivering exceptional results. 
+                By staying ahead of the curve and prioritizing our clients&#39; success, we aim to redefine what it means to be a digital partner
                 </p>
               </div>
             </div>
@@ -113,9 +107,9 @@ function About() {
           </div>
           <GridItems data={data} />
         </div>
-        <div className="bg-[#EEF4FA]">
+        {/* <div className="bg-[#EEF4FA]">
           <Team />
-        </div>
+        </div> */}
       </section>
       <Footer />
     </main>

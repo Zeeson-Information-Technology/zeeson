@@ -9,8 +9,7 @@ function Contact() {
         <div className="mt-20 mb-8 max-w-[500px] mx-auto text-center">
           <h3 className="font-[600] text-4xl mb-4 ">Contact Us</h3>
           <p className="text-[16px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore.
+            Get in touch with us to discuss how we can elevate your digital presence and set your business on the path to digital excellence.
           </p>
         </div>
         <div>

@@ -32,11 +32,11 @@ function Slider() {
       </div>
       <SwiperSlide>
         <p className="max-w-[75%] mx-auto text-center">
-          The best agency we&apos;ve worked with so far. They understand our
-          product and are able to add new features with a great focus.
+        Our partnership with Zeeson IT has been transformative. 
+        Their keen understanding of our needs and ability to enhance our product has been unparalleled
         </p>
         <div className=" laptop:max-w-[60%] mx-auto flex gap-6 justify-center mt-4">
-          <div className="rounded-full mb-3">
+          {/* <div className="rounded-full mb-3">
             <Image
               src={about5}
               className="rounded-full"
@@ -44,10 +44,10 @@ function Slider() {
               width={60}
               alt=""
             />
-          </div>
+          </div> */}
           <div>
-            <p className="font-[500] text-lg">Jenny Wilson</p>
-            <p className="text-[14px]">Vice President</p>
+            <p className="font-[500] text-lg">Johnson Akintunde</p>
+            <p className="text-[14px]">Managing Partner</p>
           </div>
         </div>
       </SwiperSlide>
@@ -57,7 +57,7 @@ function Slider() {
           product and are able to add new features with a great focus.
         </p>
         <div className=" laptop:max-w-[60%] mx-auto flex gap-6 justify-center mt-4">
-          <div className="rounded-full mb-3">
+          {/* <div className="rounded-full mb-3">
             <Image
               src={about6}
               className="rounded-full"
@@ -65,7 +65,7 @@ function Slider() {
               width={60}
               alt=""
             />
-          </div>
+          </div> */}
           <div>
             <p className="font-[500] text-lg">Jenny Wilson</p>
             <p className="text-[14px]">Vice President</p>
@@ -78,7 +78,7 @@ function Slider() {
           product and are able to add new features with a great focus.
         </p>
         <div className=" laptop:max-w-[60%] mx-auto flex gap-6 justify-center mt-4">
-          <div className="rounded-full mb-3">
+          {/* <div className="rounded-full mb-3">
             <Image
               src={about7}
               className="rounded-full"
@@ -86,7 +86,7 @@ function Slider() {
               width={60}
               alt=""
             />
-          </div>
+          </div> */}
           <div>
             <p className="font-[500] text-lg">Jenny Wilson</p>
             <p className="text-[14px]">Vice President</p>
@@ -99,7 +99,7 @@ function Slider() {
           product and are able to add new features with a great focus.
         </p>
         <div className=" laptop:max-w-[60%] mx-auto flex gap-6 justify-center mt-4">
-          <div className="rounded-full mb-3">
+          {/* <div className="rounded-full mb-3">
             <Image
               src={about8}
               className="rounded-full"
@@ -107,7 +107,7 @@ function Slider() {
               width={60}
               alt=""
             />
-          </div>
+          </div> */}
           <div>
             <p className="font-[500] text-lg">Jenny Wilson</p>
             <p className="text-[14px]">Vice President</p>
