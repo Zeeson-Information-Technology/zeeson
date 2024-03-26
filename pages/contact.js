@@ -42,13 +42,13 @@ function Contact() {
         () => {
           console.log("SUCCESS!")
           handleShowSuccessToast()
+          form.current.reset()
         },
         error => {
           console.log("FAILED...", error.text)
           handleShowErrorToast()
         }
       )
-    form.current.reset()
   }
   return (
     <main>
