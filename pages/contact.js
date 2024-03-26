@@ -1,10 +1,31 @@
-import React, { useRef } from "react"
+import React, { useRef, useState } from "react"
 import Footer from "../components/ui/Footer"
 import MainNav from "../components/ui/nav/MainNav"
 import emailjs from "@emailjs/browser"
+import Toast from "../components/ui/Toast"
 function Contact() {
   const form = useRef()
-  console.log(process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID)
+
+  const [showToast, setShowToast] = useState(false)
+  const [toastMessage, setToastMessage] = useState("")
+  const [toastType, setToastType] = useState("")
+
+  const handleShowSuccessToast = () => {
+    setToastMessage("Message sent to zeeson team successfully")
+    setToastType("success")
+    setShowToast(true)
+  }
+
+  const handleShowErrorToast = () => {
+    setToastMessage("Unable to send the message")
+    setToastType("error")
+    setShowToast(true)
+  }
+
+  const handleCloseToast = () => {
+    setShowToast(false)
+  }
+
   const sendEmail = e => {
     e.preventDefault()
 
@@ -20,11 +41,14 @@ function Contact() {
       .then(
         () => {
           console.log("SUCCESS!")
+          handleShowSuccessToast()
         },
         error => {
           console.log("FAILED...", error.text)
+          handleShowErrorToast()
         }
       )
+    form.current.reset()
   }
   return (
     <main>
@@ -88,10 +112,20 @@ function Contact() {
               ></textarea>
             </div>
             <div>
-              <button className="bg-[#282938] rounded-full py-3 px-12 md:text-[18px] laptop:text-[20px] font-[500] text-white mt-4">
+              <button
+                type="submit"
+                className="bg-[#282938] rounded-full py-3 px-12 md:text-[18px] laptop:text-[20px] font-[500] text-white mt-4"
+              >
                 Send Message
               </button>
             </div>
+            {showToast && (
+              <Toast
+                message={toastMessage}
+                type={toastType}
+                onClose={handleCloseToast}
+              />
+            )}
           </form>
         </div>
       </div>
