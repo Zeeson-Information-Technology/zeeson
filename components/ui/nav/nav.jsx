@@ -10,10 +10,10 @@ function Nav() {
   const [togglemenu, setTogglemenu] = useState(false)
   return (
     <nav className=" bg-[#1C1E53] text-white relative">
-      <div className=" flex justify-between items-center  mx-auto max-w-[80%]">
-      <div className="cursor-pointer">
-        <Logo />
-      </div>
+      <div className=" flex justify-between items-center  mx-auto max-w-[90%]">
+        <div className="cursor-pointer">
+          <Logo />
+        </div>
         {/* desktopMenu */}
         <div className=" hidden laptop:flex items-center gap-6 font-[500]">
           <Link href={"/"}>Home</Link>

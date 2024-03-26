@@ -12,29 +12,15 @@ function Logo() {
       window.removeEventListener("resize", handleResize)
     }
   }, [])
-  console.log(width)
+
   return (
-    <div className="text-2xl laptop:text-4xl font-[800]">
-      <Link href={"/"}>
-        {width > 800 ? (
-          <Image
-            src="/img1.jpg"
-            alt="logo"
-            className="h-[25px] w-[25px] md:h-[40px] md:w-[40px] object-contain"
-            height={70}
-            width={80}
-          />
-        ) : (
-          <Image
-            src="/img1.jpg"
-            alt="logo"
-            className="h-[25px] w-[25px] md:h-[40px] md:w-[40px]"
-            height={60}
-            width={60}
-          />
-        )}
-      </Link>
-    </div>
+    <Link href={"/"}>
+      {width > 800 ? (
+        <Image src="/img1.jpg" alt="logo" height={70} width={80} />
+      ) : (
+        <Image src="/img1.jpg" alt="logo" height={50} width={50} />
+      )}
+    </Link>
   )
 }
 

@@ -8,17 +8,19 @@ const Logo = dynamic(() => import("./Logo"), {
 })
 
 function Footer() {
-  const year = new Date().getFullYear(); // Get current year dynamically
+  const year = new Date().getFullYear() // Get current year dynamically
 
   return (
     <div>
-      <div className="bg-[#1C1E53] text-white ">
-        <div className=" max-w-full md:max-w-[80%] mx-auto pt-[5rem]">
-          <div className="grid grid-cols-2 gap-6 md:gap-0 ">
-            <div className="md:max-w-[70%]  pl-4">
+      <div className="bg-[#1C1E53] text-white w-full ">
+        <div className="max-w-[90%] mx-auto pt-[5rem]">
+          <div className="grid grid-cols-2 gap-6 md:gap-0 w-full ">
+            <div className="md:max-w-[70%]">
               <Logo />
+
               <p className="mt-4 opacity-90 text-sm md:text-base">
-                Ready to enhance your digital presence? Let&#39;s collaborate to create memorable online experiences.
+                Ready to enhance your digital presence? Let&#39;s collaborate to
+                create memorable online experiences.
               </p>
             </div>
             <div className=" md:max-w-[70%] pr-4 ">
@@ -26,18 +28,14 @@ function Footer() {
                 Connect With Us
               </h2>
               <p className="opacity-90 text-sm md:text-base">
-                Discuss your project or explore more about how we can elevate your business online. We’re here to help.
+                Discuss your project or explore more about how we can elevate
+                your business online. We’re here to help.
               </p>
               <div className="md:text-xl flex items-center gap-4 mt-4 ">
                 <Link href={"/"}>
-                  <BsFacebook className="cursor-pointer" />
-                </Link>
-                <Link href={"/"}>
                   <BsTwitter className="cursor-pointer" />
                 </Link>
-                <Link href={"/"}>
-                  <BsInstagram className="cursor-pointer" />
-                </Link>
+
                 <Link href={"/"}>
                   <BsLinkedin className="cursor-pointer" />
                 </Link>
@@ -57,7 +55,7 @@ function Footer() {
         </div>
         {/* Updated copyright section */}
         <div className="text-center mt-[30px]">
-          <p >Copyright &copy;{year}, Zeeson Information Technology</p>
+          <p>Copyright &copy;{year}, Zeeson Information Technology</p>
         </div>
       </div>
     </div>

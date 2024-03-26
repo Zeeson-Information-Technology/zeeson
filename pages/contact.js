@@ -1,7 +1,31 @@
-import React from "react";
-import Footer from "../components/ui/Footer";
-import MainNav from "../components/ui/nav/MainNav";
+import React, { useRef } from "react"
+import Footer from "../components/ui/Footer"
+import MainNav from "../components/ui/nav/MainNav"
+import emailjs from "@emailjs/browser"
 function Contact() {
+  const form = useRef()
+  console.log(process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID)
+  const sendEmail = e => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+        }
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!")
+        },
+        error => {
+          console.log("FAILED...", error.text)
+        }
+      )
+  }
   return (
     <main>
       <MainNav />
@@ -9,15 +33,20 @@ function Contact() {
         <div className="mt-20 mb-8 max-w-[500px] mx-auto text-center">
           <h3 className="font-[600] text-4xl mb-4 ">Contact Us</h3>
           <p className="text-[16px]">
-            Get in touch with us to discuss how we can elevate your digital presence and set your business on the path to digital excellence.
+            Get in touch with us to discuss how we can elevate your digital
+            presence and set your business on the path to digital excellence.
           </p>
         </div>
         <div>
-          <form className="grid grid-cols-1 md:grid-cols-2 items-center max-w-[80%] md:max-w-[80%] laptop:max-w-[60%] mx-auto gap-x-6 gap-y-6 bg-[#F4F6FC] px-[8%] py-[8%] md:py-[4%]">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="grid grid-cols-1 md:grid-cols-2 items-center max-w-[80%] md:max-w-[80%] laptop:max-w-[60%] mx-auto gap-x-6 gap-y-6 bg-[#F4F6FC] px-[8%] py-[8%] md:py-[4%]"
+          >
             <div className="flex flex-col gap-2">
               <label id="fname">First Name:</label>
               <input
-                name="fname"
+                name="first_name"
                 id="fname"
                 type="text"
                 className="border w-full border-slate-600 rounded-md p-2 outline-none"
@@ -26,7 +55,7 @@ function Contact() {
             <div className="flex flex-col gap-2">
               <label id="lname">Last Name:</label>
               <input
-                name="lname"
+                name="last_name"
                 id="lname"
                 type="text"
                 className="border w-full border-slate-600 rounded-md p-2 outline-none"
@@ -44,7 +73,7 @@ function Contact() {
             <div className="flex flex-col gap-2">
               <label id="email">Email:</label>
               <input
-                name="email"
+                name="user_email"
                 id="email"
                 type="email"
                 className="border w-full border-slate-600 rounded-md p-2 outline-none"
@@ -69,7 +98,7 @@ function Contact() {
 
       <Footer />
     </main>
-  );
+  )
 }
 
-export default Contact;
+export default Contact
