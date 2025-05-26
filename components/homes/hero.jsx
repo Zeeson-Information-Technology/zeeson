@@ -1,5 +1,5 @@
 import React from "react"
-import Nav from "../ui/nav/nav"
+import LandingNav from "../ui/nav/LandingNav"
 import Banner from "./Banner"
 import Image from "next/image"
 import { HiOutlineArrowNarrowRight } from "react-icons/hi"
@@ -12,7 +12,7 @@ function Hero() {
     <div className="bg-gradient-to-br from-[#1C1E53] to-[#2D2F68] min-h-screen pb-[3rem] pt-2 text-white relative overflow-hidden">
       <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
       <div className="mt-8 mb-8 relative z-10">
-        <Nav />
+        <LandingNav />
       </div>
       <Banner>
         <div className="max-w-[550px] animate-fadeIn">
