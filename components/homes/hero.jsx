@@ -26,13 +26,17 @@ function Hero() {
             From AI integration to compliant web solutions, we empower businesses with comprehensive digital transformation services that drive innovation and growth.
           </p>
           <div className="flex items-center gap-6 animate-slideUp delay-200">
-            <a href={"/contact"}>
-              <Button text={"Get in Touch"} />
-            </a>
-            <a href="/portfolio" className="group flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-white/10 transition-all">
-              View Our Work
-              <HiOutlineArrowNarrowRight className="group-hover:translate-x-2 transition-transform" />
-            </a>
+            <Link href="/contact" legacyBehavior>
+              <a>
+                <Button text={"Get in Touch"} />
+              </a>
+            </Link>
+            <Link href="/portfolio" legacyBehavior>
+              <a className="group flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-white/10 transition-all">
+                View Our Work
+                <HiOutlineArrowNarrowRight className="group-hover:translate-x-2 transition-transform" />
+              </a>
+            </Link>
           </div>
         </div>
         <div className="relative animate-float">
