@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import React from "react"
 import P1 from "../../assets/projects/project1.png"
 import P2 from "../../assets/projects/project2.png"
@@ -47,9 +48,11 @@ function Project({ showAll = false }) {
           {showAll ? "All Projects" : "View our projects"}
         </h3>
         {!showAll && (
-          <a href="/portfolio" className="text-[#2405F2] flex items-center gap-2 hover:opacity-80">
-            View More <span>→</span>
-          </a>
+          <Link href="/portfolio" legacyBehavior>
+            <a className="text-[#2405F2] flex items-center gap-2 hover:opacity-80">
+              View More <span>→</span>
+            </a>
+          </Link>
         )}
       </div>
       

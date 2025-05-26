@@ -3,13 +3,11 @@ import dynamic from "next/dynamic"
 import Link from "next/link"
 import { BiMenuAltRight } from "react-icons/bi"
 import Mobile_Nav from "./mobile.nav"
-const Logo = dynamic(() => import("../Logo"), {
-  ssr: false,
-})
+import Logo from "../Logo"
 function Nav() {
   const [togglemenu, setTogglemenu] = useState(false)
   return (
-    <nav className=" bg-[#1C1E53] text-white relative">
+    <nav className=" bg-[#1C1E53] text-white relative max-w-[80%] mx-auto">
       <div className=" flex justify-between items-center  mx-auto max-w-[90%]">
         <div className="cursor-pointer">
           <Logo />

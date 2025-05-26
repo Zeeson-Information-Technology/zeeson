@@ -1,11 +1,7 @@
 import Link from "next/link"
-import dynamic from "next/dynamic"
 import React from "react"
 import { BsFacebook, BsTwitter, BsInstagram, BsLinkedin } from "react-icons/bs"
-
-const Logo = dynamic(() => import("./Logo"), {
-  ssr: false,
-})
+import Logo from "./Logo"
 
 function Footer() {
   const year = new Date().getFullYear() // Get current year dynamically
