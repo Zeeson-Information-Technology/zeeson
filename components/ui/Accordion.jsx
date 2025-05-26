@@ -4,7 +4,7 @@ import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai"
 const accordionData = [
   {
     id: 1,
-    question: "How much time does it take?",
+    question: "How much time does it take to complete a project?",
     answer:
       "Each project is unique. Timelines are tailored to match the scope and complexity of your project.",
   },

@@ -18,10 +18,7 @@ function Nav() {
         <div className=" hidden laptop:flex items-center gap-6 font-[500]">
           <Link href={"/"}>Home</Link>
           <Link href={"/about"}>About Us</Link>
-          {/* <Link href={"/features"}>Features</Link> */}
-          {/* <Link href={"/pricing"}>Pricing</Link> */}
-          {/* <Link href={"#faq"}>Faq</Link> */}
-          {/* <Link href={"/blogs"}>Blog</Link> */}
+          <Link href={"/portfolio"}>Portfolio</Link>
           <Link href={"/contact"}>
             <button className="border rounded-full px-4 py-2">
               Contact us
