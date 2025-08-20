@@ -1,11 +1,13 @@
 import Image from "next/image"
 import Link from "next/link"
-import React from "react"
+import React, { useState } from "react"
+import Overlay from "../ui/overlay"
 import P1 from "../../assets/projects/project1.png"
 import P2 from "../../assets/projects/project2.png"
 import P3 from "../../assets/projects/project3.png"
 import P4 from "../../assets/projects/project4.png"
-import Overlay from "../ui/overlay"
+import P5 from "../../assets/projects/project5.jpg"
+import P6 from "../../assets/projects/project6.jpg"
 
 const projectData = [
   {
@@ -36,64 +38,125 @@ const projectData = [
     link: "https://www.adrianapril.ca/",
     tags: ["Business Solutions", "Web Design", "Consulting"]
   },
+    {
+    image: P5,
+     title: "Aithlon – AI-Powered Fitness Coach (Mobile App)",
+     description:
+      "Subscription-based fitness app with onboarding, premium paywalls (monthly/yearly), and personalized coaching flows.",
+    link: "#", 
+    tags: ["Business Solutions", "Web Design", "Consulting"]
+  },
+  {
+    image: P6,
+    title: "PayLite – Digital Wallet & Bill Payments",
+    description:
+      "Cross-platform wallet with NGN balance, quick actions (Airtime, Data, Cable TV), and recent activity tracking.",
+    link: "#",
+    tags: ["Fintech", "Wallet", "Payments"]
+  }
 ]
 
 function Project({ showAll = false }) {
   const projects = showAll ? projectData : projectData.slice(0, 3)
+  const [modalProject, setModalProject] = useState(null)
 
   return (
-    <div className="max-w-[80%] mx-auto my-[5rem]">
-      <div className="flex items-center justify-between mb-8">
-        <h3 className="font-[600] text-2xl md:text-3xl">
+    <div className="max-w-7xl mx-auto my-20 px-4">
+      <div className="flex flex-col md:flex-row items-center justify-between mb-12 gap-4">
+        <h3 className="font-bold text-3xl md:text-4xl tracking-tight text-[#1C1E53]">
           {showAll ? "All Projects" : "View our projects"}
         </h3>
         {!showAll && (
           <Link href="/portfolio" legacyBehavior>
-            <a className="text-[#2405F2] flex items-center gap-2 hover:opacity-80">
+            <a className="text-[#2405F2] flex items-center gap-2 font-semibold hover:underline hover:text-[#1C1E53] transition">
               View More <span>→</span>
             </a>
           </Link>
         )}
       </div>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-10">
         {projects.map((project, index) => (
-          <div key={index} className="group relative overflow-hidden rounded-xl">
-            <Image 
-              src={project.image} 
-              alt={project.title} 
-              layout="responsive" 
-              width={700} 
-              height={500}
-              className="transition-transform group-hover:scale-105"
-            />
-            <Overlay
-              head={project.title}
-              body={project.description}
-              button={
-                <a 
+          <div
+            key={index}
+            className="group relative rounded-2xl shadow-lg bg-white hover:shadow-2xl transition-shadow duration-300 overflow-hidden flex flex-col"
+          >
+            <div className="relative">
+              <Image
+                src={project.image}
+                alt={project.title}
+                layout="responsive"
+                width={700}
+                height={500}
+                className="transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+                {project.tags.map((tag, i) => (
+                  <span
+                    key={i}
+                    className="bg-[#1C1E53]/80 text-white px-3 py-1 rounded-full text-xs font-semibold shadow"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="p-6 flex-1 flex flex-col justify-between">
+              <h4 className="font-bold text-xl mb-2 text-[#1C1E53]">{project.title}</h4>
+              <p className="text-gray-700 mb-6">{project.description}</p>
+              {project.link && project.link !== "#" ? (
+                <a
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-white hover:opacity-80"
+                  className="inline-flex items-center gap-2 text-[#2405F2] font-semibold hover:underline hover:text-[#1C1E53] transition"
                 >
                   View project <span>→</span>
                 </a>
-              }
+              ) : (
+                <button
+                  className="inline-flex items-center gap-2 text-[#2405F2] font-semibold hover:underline hover:text-[#1C1E53] transition"
+                  onClick={() => setModalProject(project)}
+                >
+                  Preview <span>→</span>
+                </button>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+      {/* Modal for preview */}
+      {modalProject && (
+        <div className="fixed inset-0 z-50 bg-black/60 flex items-center justify-center">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-lg w-full p-8 relative animate-fadeIn">
+            <button
+              className="absolute top-4 right-4 text-2xl text-[#1C1E53] hover:text-[#2405F2] transition"
+              onClick={() => setModalProject(null)}
+              aria-label="Close"
+            >
+              &times;
+            </button>
+            <Image
+              src={modalProject.image}
+              alt={modalProject.title}
+              width={400}
+              height={250}
+              className="rounded-xl mb-4"
             />
-            <div className="absolute bottom-4 left-4 z-20 flex gap-2">
-              {project.tags.map((tag, i) => (
-                <span 
+            <h4 className="font-bold text-2xl mb-2 text-[#1C1E53]">{modalProject.title}</h4>
+            <p className="text-gray-700 mb-4">{modalProject.description}</p>
+            <div className="flex flex-wrap gap-2 mb-4">
+              {modalProject.tags.map((tag, i) => (
+                <span
                   key={i}
-                  className="bg-white/10 backdrop-blur-sm px-3 py-1 rounded-full text-xs text-white"
+                  className="bg-[#1C1E53]/80 text-white px-3 py-1 rounded-full text-xs font-semibold shadow"
                 >
                   {tag}
                 </span>
               ))}
             </div>
           </div>
-        ))}
-      </div>
+        </div>
+      )}
     </div>
   )
 }

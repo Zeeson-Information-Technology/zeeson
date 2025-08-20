@@ -23,7 +23,7 @@ function Hero() {
             Complete Digital Transformation for Modern Enterprises
           </h2>
           <p className="text-xl font-medium text-white/80 mb-8 animate-slideUp delay-100">
-            From AI integration to compliant web solutions, we empower businesses with comprehensive digital transformation services that drive innovation and growth.
+            From AI integration to compliant web and mobile solutions, we empower businesses with comprehensive digital transformation services that drive innovation and growth.
           </p>
           <div className="flex items-center gap-6 animate-slideUp delay-200">
             <Link href="/contact" legacyBehavior>
